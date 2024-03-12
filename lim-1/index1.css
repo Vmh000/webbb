@@ -1,0 +1,264 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+.main{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url("foto1.jpg");
+	background-size: cover;
+	background-position: center;	
+}
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo{
+	font-size: 36px;
+	color: white;
+	font-weight: bold;
+	width: 120px;
+	cursor: pointer;
+}
+.navbar ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navbar ul li a {
+	color: white;
+	text-transform: uppercase;
+}
+.navbar ul li::after {
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #fc036b;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+.navbar ul li:hover:after {
+	width: 100%;
+}
+
+.content{
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: white;
+	position: absolute;
+	transform: translateY(-50%);
+}
+.content h1 {
+	font-size: 80px;
+	margin-top: 80px;
+}
+.line{
+	width: 150px;
+	height: 4px;
+	background: #fc036b;
+	margin: 10px auto;
+}
+.content p{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+}
+button{
+	width: 200px;
+	margin: 20px 10px;
+	padding: 15px 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	background: transparent;
+	border: 3px solid green;
+	position: relative;
+	cursor: pointer;
+	border-radius: 10px;
+	overflow: hidden;
+}
+span{
+	height: 100%;
+	width: 0;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	position: absolute;
+	border-radius: 3px;
+	background: green;
+	transition: 0.5s;
+}
+button:hover span{
+	width: 100%;
+}
+
+section{
+	width: 80%;
+	margin: 80px auto;
+}
+.title{
+	text-align: center;
+	font-size: 4vmin;
+	color: #49497e;
+}
+.title h1{
+	font-size: 50px;
+	margin-top: 80px;
+}
+.line p{
+	width: 150px;
+	height: 4px;
+	background: #fc036b;
+	margin: 10px auto;
+}
+.title p{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+}
+.row {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+	background: white;
+}
+.row .col img{
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.event .row{
+	margin-top: 50px;
+}
+h4 {
+	font-size: 3vmin;
+	color: #484872;
+	margin: 20px auto;
+}
+.explore{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url("foto1.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+}
+.explore-content {
+	width: 50%;
+	padding: 40px;
+	color: whitesmoke;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.explore-content h1{
+	font-size: 7vmin;
+	margin: 50px;
+}
+.explore-content p {
+	color: rbg(221, 221, 221);
+}
+.explore-content .ctn {
+	margin-top: 40px;
+}
+
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+.row-p{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+	padding: 70px 0;
+}
+.footer-col{
+	width: 25%;
+	padding: 0 15px;
+	color: whitesmoke;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col	ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+/*RESPONSIVE`*/
+
+.navbar .toggle_btn{
+	color: white;
+	font-size: 1.5rem;
+	cursor: pointer;
+	display: none;
+}
+.action_btn{
+	transition: scale 0.2 ease;
+}
+.action_btn:hover{
+	scale:1.05;
+	color: white;
+}
+
+.action_btn:active{
+	scale:0.95;
+}
+
+@media(max-width:  767px){
+	.footer-col{
+		width: 50%;
+		margin-bottom: 30px;
+}
+}
+@media(max-width:  574px){
+	.footer-col{
+		width: 190%;
+		margin-bottom: 30px;
+}
+

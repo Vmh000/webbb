@@ -1,0 +1,41 @@
+@media screen and (max-width: 768px){
+
+.navbar{
+	width: 100%
+}
+.menu-toggle{
+	display: flex;
+	
+}
+nav ul{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 80%;
+	height: 100vh;
+	justify-content: space-evenly;
+	flex-direction: column;
+	align-items: center;
+	background-color: 1;
+	z-index: 1;
+	transform: translateX(100%);
+	transition: all 1s;
+	opacity: 0;
+	display: flex;
+	
+}
+nav ul .slide{
+	opacity: 1;
+	transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+
+
+}
